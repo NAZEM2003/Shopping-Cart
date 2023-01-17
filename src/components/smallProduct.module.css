@@ -1,0 +1,136 @@
+.container{
+    width: 400px;
+    height: 300px;
+    border: 1px solid rgba(100, 100, 100, .3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 80px 0;
+    transition: all .5s;
+    padding: 5px;
+    border-radius: 8px;
+}
+.product_image{
+    width: 50%;
+    height: 100%;
+}
+.container:hover{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.info_container{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.info_container h2{
+    color: #eac11d;
+}
+.price{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #43a96f;
+}
+
+
+
+
+.btn_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.btn_container button ,
+.btn_container a{
+    margin: 0 15px;
+}
+
+.datailsbtn{
+    color: #333;
+    transition: all .3s;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.datailsbtn:hover{
+    color: #43a96f;
+}
+.smallbtn{
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 1.4rem !important;
+    border: 1px solid #333;
+    border-radius: 4px;
+    outline: none;
+    font-weight: bold;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .3s;
+}
+.smallbtn:hover{
+    color: #43a96f;
+    border: 1px solid #43a96f;
+}
+.addbtn{
+    border: none;
+    outline: 1px solid #333;
+    transition: all .3s;
+    padding: 5px 3px;
+    border-radius: 4px;
+    font-size: .9rem;
+    font-weight: 700;
+    color: #333;
+    cursor: pointer;
+}
+
+.addbtn:hover{
+    outline:  1px solid #43a96f;
+    color: #43a96f;
+}
+.counter {
+    display: inline-block;
+    width: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1a73e8;
+  }
+
+  @media screen and (max-width: 992px) {
+    .container{
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 544px) {
+    .container{
+        flex-direction: column;
+        margin: 20px auto;
+        height: 460px;
+        border: 1px solid rgba(100, 100, 100, .3);
+    }
+    .info_container h2,
+    .price{
+        margin: 10px auto;
+    }
+
+
+
+}

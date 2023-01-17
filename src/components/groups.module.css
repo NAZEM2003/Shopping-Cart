@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    flex-direction: column;
+
+}
+.title{
+    color: #43a96f;
+    margin: 80px 10px;
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid rgba(50, 50, 50, .3);
+}
+.productsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 555px) {
+    .productsContainer {
+     flex-direction: column;
+     align-items: center;
+    }
+    .title{
+        font-size: 6vw;
+    }
+
+  }

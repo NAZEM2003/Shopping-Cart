@@ -1,0 +1,268 @@
+.container{
+    padding: 5px 5px 0 5px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.rowTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cart{
+    width: 40px;
+    height: 40px;
+    margin-left: 170px;
+}
+.cart i {
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    display: inline-block;
+    color: #3b3b3b;
+    transition: all.3s;
+}
+.cart:hover i{
+    color: #43a96f;
+}
+
+.loginContainer{
+    display: flex;
+    width: 105px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #3b3b3b;
+}
+.loginContainer i{
+    width: 35px;
+    margin-right: 5px;
+    font-size: 35px;
+    color: inherit;
+    transition: all .3s;
+}
+.loginContainer span{
+    font-size: 20px;
+    font-weight: 700;
+    color: inherit;
+    transition: all .3s;
+}
+.loginContainer:hover{
+    color: #43a96f;
+}
+
+.searchContainer{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+}
+
+.searchContainer i{
+    width: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 18px;
+    left: 0;
+    font-size: 22px;
+    transition: all .3s;
+}
+.searchContainer i:hover{
+    color: #43a96f;
+}
+
+
+
+.searchContainer input{
+    margin-right:100px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    padding-left: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all .2s ease-out;
+}
+.searchContainer input:focus{
+    border-bottom: 2px solid #2090d1;
+}  
+.logo{
+    margin-right: 50px;
+}
+.logo h1{
+    margin: 0 20px;
+    font-weight: 900;
+    font-size: 50px;
+    font-style: oblique;
+    font-family:  'Courier New', Courier, monospace;
+    color: #e6123d;
+}
+.rowBottom{
+    padding: 10px 5px 0 5px;
+    overflow: hidden;
+}
+
+.rowBottom ul{
+    display: flex;
+}
+.rowBottom ul li{
+    padding: 15px 5px;
+    margin-right: 40px;
+    cursor: pointer;
+    position: relative;
+}
+.rowBottom ul li:hover a{
+    color: #43a96f;
+}
+.rowBottom ul li:hover::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #2090d1;
+    position: absolute;
+    top: 46px;
+    left: 0;
+}
+.rowBottom ul li a{
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+}
+.rowBottom i,
+.rowBottom img{
+    font-size:17px;
+    display: inline-block;
+    width: 18px;
+    margin-right:5px ;
+}
+
+
+
+
+
+.displaynon{
+    display: none;
+}
+.sidebar{
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    background-color: rgba(50, 50, 50, 1);
+    z-index: 19;
+    /* padding: 10px; */
+    width: 0;
+    transition: all .3s;
+    overflow: hidden;
+}
+.sidebarToggle{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    outline: none;
+    z-index: 20;
+    transition: all .3s;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.sidebarToggle i{
+    width: 40px;
+    font-size: 40px;
+    color: #2090d1;
+    margin: 3px auto;
+}
+
+.sidebarSearch{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+    margin: 10px;
+}
+
+.sidebarSearch input{
+    margin-right:100px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all .2s ease-out;
+}
+.sidebarSearch input:focus{
+    border-bottom: 2px solid #2090d1;
+
+}
+
+.sidebarList{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 25px;
+    height: 100vh;
+}
+.sidebarList li{
+    margin:  30px;
+}
+.sidebarList li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .3s;
+
+}
+.sidebarList li a:hover{
+    color: #43a96f;
+}
+@media screen and (min-width: 1024px){
+    .sidebar{
+       display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .rowBottom ,
+    .loginContainer ,
+    .searchContainer ,
+    .cart{
+        display: none;
+    }
+    .sidebarToggle{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 767px) {
+   
+}
+
+@media screen and (max-width:544px) {
+    .sidebarSearch input{
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 3vw;
+    }
+    .sidebarList li a{
+        font-size: 4.5vw;
+        font-weight: 500;
+    }
+}
+

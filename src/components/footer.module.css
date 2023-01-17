@@ -1,0 +1,103 @@
+.container{
+    width: 100%;
+    background-color: #eac11d;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+}
+.rowTop{
+    display: flex;
+    justify-content: space-around;
+}
+.section{
+    text-align: left;
+}
+.section h3{
+    color: #222;
+    line-height: 30px;
+}
+.section li{
+    line-height: 40px;
+    color: #333;
+}
+.section a{
+    color: #333;
+}
+.iconContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.iconContainer ul{
+    display: flex;
+    margin-top: 45px;
+}
+.iconContainer li{
+    margin: 10px;
+}
+
+.iconContainer a i{
+    font-size: 30px;
+}
+
+.iconContainer li:nth-child(1) i{
+    background-image: linear-gradient(to top  , #FCAF45 , #E1306C , #833AB4 , #405DE6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+
+.iconContainer li:nth-child(2) i{
+    color: #0e76a8;
+}
+
+.iconContainer li:nth-child(3) i{
+    color: #25d336;
+}
+
+.iconContainer li:nth-child(4) i{
+    color: #00acee;
+}
+
+.iconContainer li:nth-child(5) i{
+    color: rgb(44, 165, 224);
+}
+
+.iconContainer li:nth-child(6) i{
+    color: #999999;
+    font-size: 37px;
+}
+
+.rowBottom{
+    margin-top: 35px;
+}
+.rowBottom p{
+    letter-spacing: 3px;
+}
+.rowBottom p a{
+    color: #43a96f;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+@media screen and (max-width : 767px){
+    .rowTop{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section{
+        text-align: center;
+        margin: 20px auto;
+    }
+    .iconContainer ul{
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width:544px) {
+    .rowBottom p{
+        font-size: 3vw;
+    }
+}
